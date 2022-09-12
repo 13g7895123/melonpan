@@ -1,11 +1,11 @@
 <?php
-    include_once(__DIR__ . './__Class/ClassLoad.php');
+    include_once(__DIR__ . '/__Class/ClassLoad.php');
 
     $NOW_Page = 'main';
 
-    // if (BaseWork::_get('PageName') != "" && file_exists(BaseWork::_get('PageName') . '.php')) {
-    //     $NOW_Page = BaseWork::_get('PageName'); //帶入目前PageName
-    // }
+    if (BaseWork::_get('PageName') != "" && file_exists('Pages/' . BaseWork::_get('PageName') . '.php')) {
+        $NOW_Page = BaseWork::_get('PageName'); //帶入目前PageName
+    }
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@
     </div>
     <div class='content'>
         <?php
-            include('./Pages/' . $NOW_Page . '.php');
+            include('Pages/' . $NOW_Page . '.php');
         ?>        
     </div>
     <div class='foot_bar'></div>    
@@ -71,7 +71,6 @@
     $(document).ready(function() {
         <?php
             include(__DIR__ . '/Pages/js/' . $NOW_Page . '.js');
-            // include(__DIR__ . '/Pages/js/index.js');
         ?>
     })
 </script>
