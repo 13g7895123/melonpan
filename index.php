@@ -16,17 +16,10 @@
 
     <!-- 引入JQuery -->
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-    
-    <!-- 引入Bootstrap的CSS -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
 
     <!-- 引入font-awesome的CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
-    <!-- 引入Bootstrap的js -->
-    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
-
     <!-- 引入Vue.js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js'></script>
 
@@ -38,7 +31,7 @@
     <div class='nav_bar'>
         <div class='nav_bar_main'>
             <div class='nav_left'>
-                <a href="?PageName=main"><img src="./assets/img/logo_100.png" alt="company logo"></a>
+                <a href="?PageName=main"><img src="./assets/img/logo(horizontal).png" alt="company logo"></a>
             </div>
             <div class='nav_mid'></div>
             <div class='nav_right'>
@@ -55,7 +48,7 @@
                     <!-- <div>聯繫我們</div> -->
                 </div>     
                 <div class='group tools'>
-                    <a href="?PageName=tools_cost_cal"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                    <a href="?PageName=tools_material_price"><i class="fa-solid fa-screwdriver-wrench"></i></a>
                 </div>
             </div>
         </div>

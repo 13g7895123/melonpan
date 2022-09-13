@@ -3,11 +3,15 @@
 <div class='tools_cost_cal'>
     <div class='block'>
         <div class='top'>
-            <laebl>材料</laebl>
+            <div class='title'>成本計算</div>
+        </div>
+        <div class='mid'>
+            <label class='field'>材料:</label>
             <select id='material'></select>
-            <laebl>重量</laebl>
+            <label class='field'>重量:</label>
             <input>
-            
+            <label>(克)</label>
+            <div class='btn add'>+新增</div>
         </div>
 
 
