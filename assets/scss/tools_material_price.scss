@@ -115,7 +115,8 @@ $color_white: #fff;
 }
 
 .tools_material_price .block .bot .list .total_price {
-    width: 3vw;
+    width: 5vw;
+    text-align: right;
 }
 
 .tools_material_price .block .bot .list .arrow {
@@ -124,7 +125,7 @@ $color_white: #fff;
 }
 
 .tools_material_price .block .bot .list .g_price {
-    width: 5vw;
+    width: 8vw;
 }
 
 .tools_material_price .block .bot .list .btn_cancel {
@@ -132,4 +133,36 @@ $color_white: #fff;
     border: none;
     position: absolute;
     right: 0.1vw;
+}
+
+.tools_material_price .block .bot .last_row {
+    display: flex;
+    align-items: center;
+    height: 1.4vw;
+    margin: 0.3vw 0.8vw;
+    padding: 0.5vw;
+    background-color: $color_red;
+    color: $color_white;
+    position: relative;
+}
+
+.tools_material_price .block .bot .last_row .count_total {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    margin-left: 0.5vw;
+}
+
+.tools_material_price .block .bot .last_row .btn_confirm {
+    // border: 1px solid #000;
+    position: absolute;
+    right: 0.5vw;
+    background-color: $color_white;
+    color: $color_red;
+    font-weight: 600;
+    padding: 0.2vw 0.6vw;
+    cursor: pointer;
+    letter-spacing: 0.1vw;
 }

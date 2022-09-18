@@ -7,16 +7,16 @@
         </div>
         <div class='mid'>
             <label class='field material'>材料:</label>
-            <input class='material_name' name='material_name' required>
+            <input class='material_name' name='material_name'>
             <label class='field weight'>重量:</label>
-            <input name='weight' required>
+            <input class='weight' name='weight'>
             <select name='unit'>
                 <option>公斤</option>
                 <option>公克</option>
                 <option>台斤</option>
             </select>
             <label class='field price'>價格:</label>
-            <input name='total_price' required>
+            <input class='total_price' name='total_price'>
             <div class='btn add'>+新增</div>
         </div>
         <div class='bot'>
@@ -29,6 +29,10 @@
                 <div class='list_field arrow'><i class="fa-solid fa-arrow-right"></i></div>
                 <div class='list_field g_price'>$0.3(g)</div>
                 <div class='list_field btn_cancel'>X</div>
+            </div> -->
+            <!-- <div class='last_row'>
+                <div class='count_total'>一共新增N筆材料資訊</div>
+                <div class='btn_confirm'>確認新增</div>
             </div> -->
         </div>
 
