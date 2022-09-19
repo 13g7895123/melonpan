@@ -1,19 +1,8 @@
 // 設定初始值
-$('input[name="material_name"]').val('');
-$('input[name="weight"]').val('');
-$('input[name="total_price"]').val('');
+init();
 
 var material, weight, unit, total_price;
-var list_count = 0;
-
 var material_list = [];
-
-// 測試用資料
-// material_list = [
-//     { name: '肉鬆', weight: 3, unit: '公斤', total_price: 700, g_price: 0 },
-//     { name: '蜂蜜', weight: 3, unit: '公斤', total_price: 1000, g_price: 0 },
-//     { name: '糖', weight: 1, unit: '公斤', total_price: 40, g_price: 0 },
-// ];
 
 // 建立模板
 var item_html = "<div class='list'>" +
@@ -59,8 +48,28 @@ $('.add').click(function () {
         $('.weight').val('');
         $('.total_price').val('');
         $('input[name="material_name"]').focus();
+
+        console.log(typeog(material_list));
     }
 });
+
+//按下Enter鍵等同送出
+$(".total_price").keypress(function (e) {
+    code = (e.keyCode ? e.keyCode : e.which);
+    if (code === 13) {
+        $('.add').click();
+        return false;
+    }
+});
+
+function init() {
+    $('input[name="material_name"]').val('');
+    $('input[name="weight"]').val('');
+    $('input[name="total_price"]').val('');
+    $('.bot').empty();
+
+    material_list = [];
+}
 
 function show_list() {
 
@@ -84,7 +93,6 @@ function show_list() {
 
         // 刪除按鈕
         $('#' + del_item_id).click(function () {
-            console.log('123');
             remove_item($(this).attr('data_del_id'));
         });
     }
@@ -96,6 +104,26 @@ function show_list() {
             "<div class='btn_confirm'>確定新增</div>" +
             "</div>"
         );
+
+        $('.btn_confirm').click(function () {
+            $.ajax({
+                type: "POST",
+                url: ajax_url + '?action=submit',
+                data: {
+                    data: JSON.stringify(material_list)
+                },
+                dataType: 'JSON',
+                success: function (data) {
+                    if (data.success) {
+                        alert('已更新' + data.update_count + '筆資料');
+                        init();
+                    }
+                }, error: function () {
+                    alert('更新資料有誤!');
+                }
+
+            });
+        });
     }
 }
 

@@ -62,6 +62,7 @@
 </body>
 <script>
     $(document).ready(function() {
+        const ajax_url = "<?php if ($NOW_Page) echo './Pages/ajax/' . $NOW_Page . '.php'; ?>";
         <?php
             include(__DIR__ . '/Pages/js/' . $NOW_Page . '.js');
         ?>
