@@ -23,11 +23,10 @@
     <!-- 引入Vue.js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js'></script>
 
-</head>
-<body>
-
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 
+</head>
+<body>
     <div class='nav_bar'>
         <div class='nav_bar_main'>
             <div class='nav_left'>
@@ -49,6 +48,9 @@
                 </div>     
                 <div class='group tools'>
                     <a href="?PageName=tools_material_price"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                </div>
+                <div class='group tools'>
+                    <a href="?PageName=tools_cost_cal"><i class="fa-sharp fa-solid fa-calculator"></i></i></a>
                 </div>
             </div>
         </div>
