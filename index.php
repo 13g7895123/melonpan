@@ -23,11 +23,12 @@
     <!-- 引入Vue.js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js'></script>
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <!-- 引入Tailwind -->
+    <link rel="stylesheet" href="./assets/tailwind/output.css" > 
 
 </head>
 <body>
-    <div class='nav_bar'>
+    <!-- <div class='nav_bar'>
         <div class='nav_bar_main'>
             <div class='nav_left'>
                 <a href="?PageName=main"><img src="./assets/img/logo(horizontal).png" alt="company logo"></a>
@@ -36,15 +37,12 @@
             <div class='nav_right'>
                 <div class='group user'>
                     <i class="fa-solid fa-user"></i>
-                    <!-- <div>會員資訊</div> -->
                 </div>
                 <div class='group cart'>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <!-- <div>購物車</div> -->
                 </div>            
                 <div class='group contact'>
                     <i class="fa-solid fa-comment"></i>
-                    <!-- <div>聯繫我們</div> -->
                 </div>     
                 <div class='group tools'>
                     <a href="?PageName=tools_material_price"><i class="fa-solid fa-screwdriver-wrench"></i></a>
@@ -52,9 +50,12 @@
                 <div class='group tools'>
                     <a href="?PageName=tools_cost_cal"><i class="fa-sharp fa-solid fa-calculator"></i></i></a>
                 </div>
+                <div class='group test'>
+                    <a href="?PageName=reservation"><i class="fa-sharp fa-solid fa-calculator"></i></i></a>
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class='content'>
         <?php
             include('Pages/' . $NOW_Page . '.php');

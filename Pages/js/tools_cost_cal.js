@@ -65,8 +65,6 @@ $('.dia_mask').click(function () {
     $('#dia_pname').css('display', 'none');
 });
 
-
-
 function get_data(action, param1) {
 
     var res;
